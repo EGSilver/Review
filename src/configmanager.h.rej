@@ -1,0 +1,16 @@
+*************** class ConfigManager
+*** 44,49 ****
+  			WARN_UNSAFE_SCRIPTS,
+  			CONVERT_UNSAFE_SCRIPTS,
+  			CLASSIC_EQUIPMENT_SLOTS,
+  
+  			LAST_BOOLEAN_CONFIG /* this must be the last one */
+  		};
+--- 44,50 ----
+  			WARN_UNSAFE_SCRIPTS,
+  			CONVERT_UNSAFE_SCRIPTS,
+  			CLASSIC_EQUIPMENT_SLOTS,
++ 			ALLOW_DUAL_WIELDING,
+  
+  			LAST_BOOLEAN_CONFIG /* this must be the last one */
+  		};

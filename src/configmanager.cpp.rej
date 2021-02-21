@@ -1,0 +1,16 @@
+*************** bool ConfigManager::load()
+*** 88,93 ****
+  	boolean[WARN_UNSAFE_SCRIPTS] = getGlobalBoolean(L, "warnUnsafeScripts", true);
+  	boolean[CONVERT_UNSAFE_SCRIPTS] = getGlobalBoolean(L, "convertUnsafeScripts", true);
+  	boolean[CLASSIC_EQUIPMENT_SLOTS] = getGlobalBoolean(L, "classicEquipmentSlots", false);
+  
+  	string[DEFAULT_PRIORITY] = getGlobalString(L, "defaultPriority", "high");
+  	string[SERVER_NAME] = getGlobalString(L, "serverName", "");
+--- 88,94 ----
+  	boolean[WARN_UNSAFE_SCRIPTS] = getGlobalBoolean(L, "warnUnsafeScripts", true);
+  	boolean[CONVERT_UNSAFE_SCRIPTS] = getGlobalBoolean(L, "convertUnsafeScripts", true);
+  	boolean[CLASSIC_EQUIPMENT_SLOTS] = getGlobalBoolean(L, "classicEquipmentSlots", false);
++ 	boolean[ALLOW_DUAL_WIELDING] = getGlobalBoolean(L, "allowDualWielding", false);
+  
+  	string[DEFAULT_PRIORITY] = getGlobalString(L, "defaultPriority", "high");
+  	string[SERVER_NAME] = getGlobalString(L, "serverName", "");
