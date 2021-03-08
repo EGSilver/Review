@@ -225,7 +225,7 @@ void ProtocolGameBase::AddPlayerSkills(NetworkMessage& msg)
 	}
 
 	if (version >= 1094) {
-		for (int i = 0; i < 12; i++) {
+		for (int i = 0; i < 18; i++) {
 			msg.addByte(0x00);
 		}
 	}
