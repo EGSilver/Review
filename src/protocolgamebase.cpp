@@ -224,12 +224,6 @@ void ProtocolGameBase::AddPlayerSkills(NetworkMessage& msg)
 		msg.addByte(player->getSkillPercent(i));
 	}
 
-	if (version >= 1094) {
-		for (int i = 0; i < 18; i++) {
-			msg.addByte(0x00);
-		}
-	}
-
 	for (uint8_t i = SPECIALSKILL_FIRST; i <= SPECIALSKILL_LAST; ++i) {
 		msg.add<uint16_t>(std::min<int32_t>(100, player->varSpecialSkills[i]));
 		msg.add<uint16_t>(0);
