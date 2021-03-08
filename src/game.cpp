@@ -3955,7 +3955,7 @@ bool Game::combatChangeHealth(Creature* attacker, Creature* target, CombatDamage
 			chance = attackerPlayer->getSpecialSkill(SPECIALSKILL_CRITICALHITCHANCE);
 			if (chance != 0 && uniform_random(1, 100) <= chance) {
 				healthChange += std::round(healthChange * (attackerPlayer->getSpecialSkill(SPECIALSKILL_CRITICALHITAMOUNT) / 100.));
-				g_game.addMagicEffect(target->getPosition(), CONST_ME_EXPLOSIONHIT);
+				g_game.addMagicEffect(target->getPosition(), 173);
 			}
 		}
 
